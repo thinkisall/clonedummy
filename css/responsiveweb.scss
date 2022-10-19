@@ -1,0 +1,268 @@
+@media screen and (min-width:1500px) and (max-width:1700px) {
+    .main_section {
+
+        .views {
+            justify-content: space-around;
+
+        }
+
+    }
+
+    .hoverbox {
+
+        transition: all 0.2s 1s;
+
+        &:hover:nth-child(4n+1) {
+            transform: scale(1.3) translate(30px, 20px) !important
+        }
+
+        &:hover:nth-child(4n) {
+            transform: scale(1.3) translate(-30px, 20px) !important
+        }
+
+
+        &:hover:nth-child(n+2):nth-child(-n+3) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+        &:hover:nth-child(6) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+}
+
+@media screen and (min-width:1210px) and (max-width:1490px) {
+
+    .main_section {
+
+        .views {
+            justify-content: space-around;
+
+        }
+    }
+
+    .hoverbox {
+
+        transition: all 0.2s 1s;
+
+        &:hover:nth-child(4n+1) {
+            transform: scale(1.3) translate(30px, 20px) !important
+        }
+
+        &:hover:nth-child(4n) {
+            transform: scale(1.3) translate(-30px, 20px) !important
+        }
+
+
+        &:hover:nth-child(n+2):nth-child(-n+3) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+        // &:hover:nth-child(6) {
+        //     transform: scale(1.3) translate(30px, 30px)
+        // }
+
+
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+}
+
+@media screen and (min-width:930px) and (max-width: 1235px) {
+
+    .header_top {
+        .header_center {
+            margin-left: 0 !important;
+
+            .input_keyboard {
+                width: 400px;
+            }
+        }
+    }
+
+    .main_section {
+
+        .views {
+            justify-content: space-around;
+
+
+        }
+    }
+
+    .hoverbox {
+
+        transition: all 0.2s 1s;
+
+
+        &:hover:nth-child(3n) {
+            transform: scale(1.3) translate(-30px, 20px) !important
+        }
+
+
+        &:hover:nth-child(6n+2) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+        &:hover:nth-child(5n) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+        &:hover:nth-child(3n+1) {
+            transform: scale(1.3) translate(30px, 20px) !important
+        }
+
+        // &:hover:nth-child(6) {
+        //     transform: scale(1.3) translate(30px, 30px)
+        // }
+
+
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width:650px) and (max-width:925px) {
+    .header_top {
+        .header_center {
+
+            .input_keyboard {
+                width: 200px;
+            }
+        }
+    }
+
+    .main_section {
+
+        .views {
+            justify-content: space-around;
+
+
+        }
+    }
+
+    .hoverbox {
+
+        transition: all 0.2s 1s;
+
+
+        &:hover:nth-child(2n) {
+            transform: scale(1.3) translate(-30px, 20px) !important
+        }
+
+
+        &:hover:nth-child(2n-1) {
+            transform: scale(1.3) translate(30px, 20px) !important
+        }
+
+
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+}
+
+@media screen and (min-width:150px) and (max-width:649px) {
+    header {
+
+        .header_top {
+
+            .header_center {
+
+                .input_keyboard {
+
+                    #input {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_section {
+
+        .views {
+            justify-content: space-around;
+
+
+        }
+    }
+
+    .hoverbox {
+
+        transition: all 0.2s 1s;
+
+
+        &:hover:nth-child(n) {
+            transform: scale(1.3) translate(0, 20px) !important
+        }
+
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+}
+
+@media screen and (min-width:150px) and (max-width:539px) {
+
+
+    main {
+        .side_bar {
+            display: none !important;
+        }
+
+        .main_section {
+            margin-left: 0 !important;
+
+            .views {
+                min-width: 350px !important;
+            }
+        }
+    }
+
+    #nav_bar {
+        margin-left: 0 !important;
+    }
+
+    .shorts {
+
+        .main {
+            justify-content: space-around;
+        }
+
+    }
+
+}
