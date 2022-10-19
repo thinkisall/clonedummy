@@ -1,0 +1,261 @@
+//ㅡㅡㅡㅡㅡㅡㅡ기본 세팅ㅡㅡㅡㅡㅡㅡㅡㅡㅡ//
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$backgroundcolor : #282828;
+$headercolor : #202020;
+$maincolor : #181818;
+
+
+//ㅡㅡㅡㅡㅡㅡㅡ자주 쓰이는것들ㅡㅡㅡㅡㅡㅡ//
+
+@mixin defaultflex($center: center) {
+    display: flex;
+    justify-content: $center;
+    align-items: center;
+}
+
+
+.hidden {
+    display: block !important;
+}
+
+.click_sidebar {
+    z-index: 10;
+    display: none;
+    position: sticky;
+    overflow: scroll;
+    width: 300px;
+    height: 1024px;
+    top: 56px;
+
+    background-color: $maincolor;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(113, 113, 113);
+        border-radius: 10px;
+        visibility: var(--webkit-scrollbar);
+
+    }
+
+
+    .hidden_side_btn_1 {
+        background-color: $maincolor;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 12px;
+        margin-right: 6px;
+
+        .home_btn {
+            padding-left: 24px;
+            height: 40px;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: #4C4C4C;
+            }
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+
+    .hidden_side_btn_2 {
+        background-color: $maincolor;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid rgb(56, 56, 56);
+        border-bottom: 1px solid rgb(56, 56, 56);
+        margin-right: 6px;
+        padding-bottom: 12px;
+
+        .home_btn {
+            padding-left: 24px;
+            height: 40px;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: #4C4C4C;
+            }
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+
+    .hidden_side_btn_3,
+    .hidden_side_btn_4,
+    .hidden_side_btn_5,
+    .hidden_side_btn_6 {
+        background-color: $maincolor;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-top: 8px;
+        margin-right: 6px;
+        border-bottom: 1px solid rgb(56, 56, 56);
+
+        .home_btn {
+            padding-left: 24px;
+            height: 40px;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                background-color: #4C4C4C;
+            }
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: white;
+            }
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+    }
+
+
+
+    .hidden_side_btn_7 {
+        background-color: $maincolor;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-right: 6px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgb(56, 56, 56);
+
+        .home_btn {
+            padding-left: 24px;
+            padding-top: 16px;
+            padding-bottom: 10px;
+            width: 192px;
+            height: auto;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                display: inline-block !important;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+
+                a {
+                    margin-right: 8px;
+                    color: rgb(170, 170, 170);
+
+                    &:last-child {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+        .home_btn_2 {
+            padding-left: 24px;
+            width: 192px;
+            height: auto;
+            padding-top: 12px;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                display: inline-block !important;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+
+
+                a {
+                    margin-right: 8px;
+                    color: rgb(170, 170, 170);
+
+                    &:last-child {
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+
+        .home_btn_3 {
+            padding-left: 24px;
+            width: 192px;
+            height: auto;
+            background-color: $maincolor;
+            display: flex;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 10px;
+
+            .home_img {
+                display: block;
+                margin-right: 24px;
+            }
+
+            .home_text {
+                display: inline-block !important;
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: rgb(113, 110, 100);
+                line-height: 1.8rem;
+
+                a {
+                    color: rgb(44, 153, 255);
+                }
+            }
+        }
+    }
+
+}
